@@ -1,31 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h2>Моя перша HTML-форма</h2>
-  <form action="https://httpbin.org/get"> 
-    <div class="form-group">
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h2>Моя перша HTML-форма</h2>
+    <form action="https://httpbin.org/post" method='post'>
+      <div class="form-group">
         <label for="name">Ім'я</label>
-        <input type="text">
+        <input id="name" name="name" type="text" />
       </div>
       <div class="form-group">
         <label for="birthday">Дата народження</label>
-        <input type="date">
+        <input id="date" name="date" type="date" />
       </div>
-      <div class='form-group'>
-        <label for="name">Імейл</label>
-        <input type="text">
+      <div class="form-group">
+        <label for="email">Імейл</label>
+        <input id="email" name="email" type="text" />
       </div>
       <div class="'form-gropu">Повідомлення</div>
-      <input type="text">
-  </form>
- 
-  
-  
-</body>
+      <input id="message" name="message" type="text" />
+      <br />
+      <h2>Які ваші улюблені напої:</h2>
+      <input type="checkbox" id="cocacola" name="drink" />
+      <label for="cocacola">Кокакола</label>
+      <input type="checkbox" id="mochito" name="drink" />
+      <label for="mochito">Мохіто</label>
+      <input type="checkbox" id="kvas" name="drink" />
+      <label for="kvas">Квас</label>
+      <input type="checkbox" id="sprite" name="drink" />
+      <label for="sprite">Спрайт</label>
+      <br />
+      <br>
+      <h2>Якої ви національності:</h2>
+      <input type="radio" id =ukrainian name="nationality" >
+      <label for="ukrainian">Українець</label>
+      <input type="radio" id =indian name="nationality" >
+      <label for="indian">Індус</label>
+      <input type="radio" id =uzbek name="nationality" >
+      <label for="uzbek">Узбек</label>
+      <br>
+      <button type="submit">Надіслати</button>
+      <button type="clear">Очистити</button>
+      </br>
+    </form>
+    <br>
+    <source
+      media="(max-width: 468px)"
+      srcset="https://picsum.photos/seed/picsum/300/500"
+    />
+    <source
+      media="(min-width: 468px)"
+      srcset="https://picsum.photos/seed/picsum/1000/4S00"
+    />
+    <img src="https://picsum.photos/seed/picsum/200/300" alt="Зображення" />
+  </body>
 </html>
