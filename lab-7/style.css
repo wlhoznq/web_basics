@@ -1,0 +1,90 @@
+/* Основные настройки */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Контейнер для адресов */
+  .addresses-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Стили блока адреса */
+  .address {
+    position: relative;
+    width: 32%;
+    margin: 1%;
+    padding: 40px 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #ffe4c4;
+  }
+  
+  /* Первый и последний блоки */
+  .address:first-child {
+    background-color: #f0ffc1;
+    margin-left: 0;
+  }
+  .address:last-child {
+    background-color: #b6ffda;
+    margin-right: 0;
+  }
+  
+  /* Стили иконки адреса */
+  .address__icon {
+    width: 70px;
+    float: left;
+    margin-right: 10px;
+  }
+  
+  /* Заголовок адреса */
+  .address__header {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  
+  /* Кнопка удаления адреса */
+  .address__delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff8e50;
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    line-height: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 0px 10px 0px 10px;
+  }
+  
+  /* Hover-эффект для кнопки удаления */
+  .address__delete-btn:hover {
+    background-color: #ffd050;
+  }
+  
+  /* Иконка статуса адреса */
+  .address__status {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 32px;
+  }
+  
+  /* Hover-эффект для блока адреса */
+  .address:hover {
+    background-color: #f3f3f3;
+  }
+  
+  /* Адаптивный дизайн для мобильных устройств */
+  @media (max-width: 767px) {
+    .address {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+  }
+  
